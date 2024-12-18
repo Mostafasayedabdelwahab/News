@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>News</title>
+  </head>
+  <body>
+    <div class="main-header">
+      <div class="head1">
+        <h1 class="title">News</h1>
+        <p id="date"><i class="fa-solid fa-calendar-days"></i></p>
+      </div>
+      <a href="#" id="menu"> <i class="fa-sharp fa-solid fa-bars fa-xl"></i></a>
+      <ul id="head2" class="head2">
+        <a href="#" id="click"><i class="fa-solid fa-xmark"></i></a>
+        <li><a onclick="hide()" href="#new" id="news">New</a></li>
+        <li><a onclick="hide()" href="#sports" id="sport">Sports</a></li>
+        <li><a onclick="hide()" href="#arts" id="arts">Arts</a></li>
+        <li><a onclick="hide()" href="#health" id="health">Health</a></li>
+        <li><a onclick="hide()" href="#incidents" id="incidents">Incidents</a></li>
+        <li><a onclick="hide()" href="#wether" id="wether">Wether</a></li>
+      </ul>
+    </div>
+    <div class="searching">
+      <h1>Search News</h1>
+      <input type="text" id="searchQuery" placeholder="Search for news..." />
+      <button id="searchButton">Search</button>
+    </div>
+    <div id="newsContainer"></div>
+
+        <a id="up" href="#">Up</a>
+
+    <script src="app.js"></script>
+  </body>
+</html>
